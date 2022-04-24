@@ -1,5 +1,4 @@
 body {
-    direction: rtl;
     padding: 10px;
     background-color: #fff;
     color: #000;
@@ -49,4 +48,24 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.smooth-typing {
+    width:16.8ch;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width:0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
