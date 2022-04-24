@@ -1,5 +1,6 @@
 const toggle = document.getElementById('toggle')
 let light = true;
+
 toggle.addEventListener('click',function(){
     document.body.classList.toggle("dark");
     if (!light) {
@@ -13,7 +14,9 @@ toggle.addEventListener('click',function(){
 
 window.onload = function () {
     let localStorageTheme = localStorage.getItem('theme')
-    if (localStorageTheme==='dark') {
+    if (localStorageTheme ==='dark') {
         document.body.classList.add('dark')
+        toggle.checked = true;
+        light = false;
     }
 }

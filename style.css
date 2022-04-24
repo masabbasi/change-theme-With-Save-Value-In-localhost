@@ -1,11 +1,11 @@
-body .light{
-direction: rtl;
-padding: 10px;
-background-color: #fff;
-color: #000;
+body .light {
+    direction: rtl;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
 }
 
-.dark{
+.dark {
     background-color: #000;
     color: #fff;
 }
@@ -38,7 +38,7 @@ color: #000;
     display: grid;
     place-content: center;
     line-height: 0;
-    transition: background-color 1s,transform 1s ease-in;
+    transition: background-color 1s, transform 1s ease-in;
 }
 
 #toggle:checked+.button::after {
